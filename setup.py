@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text(encoding='utf-8')
 
 setup(
     name="zinmage",
-    version="0.1.3",
+    version="0.1.4",
     description="Minimalist Python library for image conversion",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -16,6 +16,11 @@ setup(
     url="https://github.com/tinprogrammers/zinmage",  # optional but nice
     packages=find_packages(),
     install_requires=["Pillow"],
+    entry_points={
+        "console_scripts": [
+            "zinmage=zinmage.cli:main",
+        ]
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

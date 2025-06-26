@@ -1,6 +1,6 @@
 # 📸 Zinmage
 
-**Zinmage** is a minimalist and beginner-friendly Python library for image conversion.  
+**Zinmage** is a minimalist and beginner-friendly Python library and CLI Program for image conversion.  
 It’s designed to be clean, modular, and super easy to use — perfect for devs who just want things to work. ✨
 
 > 💡 Current Feature: Convert `.png` to `.jpg` or vice versa using **one line of code**.
@@ -9,6 +9,7 @@ It’s designed to be clean, modular, and super easy to use — perfect for devs
 
 ## 🚀 Features
 
+- 🎯CLI Version Abvalible
 - ✅ Convert PNG ➜ JPG in seconds
 - 🧩 Modular design — more formats coming soon
 - 🪶 Lightweight and dependency minimal (just uses Pillow)
@@ -34,7 +35,7 @@ pip install .
 
 ---
 
-## 🧠 Usage
+## 🧠 Usage Libary
 
 ```python
 from zinmage import convert_png_to_jpg
@@ -49,11 +50,24 @@ You can also provide a custom output path:
 convert_png_to_jpg("example.png", "converted/my-image.jpg")
 
 ```
+
 ## Methods
-| Features        | Methods              |
-|----------------|---------------------|
-| PNG ➜ JPG      | `convert_png_to_jpg` |
-| JPG ➜ PNG      | `convert_jpg_to_png` |
+
+| Features  | Methods              |
+| --------- | -------------------- |
+| PNG ➜ JPG | `convert_png_to_jpg` |
+| JPG ➜ PNG | `convert_jpg_to_png` |
+
+---
+
+## 🧠 Usage CLI
+
+## Methods
+
+| Features  | Methods                              |
+| --------- | ------------------------------------ |
+| PNG ➜ JPG | `zinmage convert input.png --to jpg` |
+| JPG ➜ PNG | `zinmage convert photo.jpg --to png` |
 
 ---
 
@@ -91,11 +105,9 @@ pytest tests/
 
 ## 📌 Coming Soon
 
-- JPG ➜ PNG
 - WebP & BMP support
 - Batch folder conversion
 - Resize & optimize
-- CLI (command-line) tool
 - GUI web tool (zinmage.com)
 
 ---
