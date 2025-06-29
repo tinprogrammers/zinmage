@@ -7,8 +7,8 @@ long_description = (this_directory / "README.md").read_text(encoding='utf-8')
 
 setup(
     name="zinmage",
-    version="0.1.4",
-    description="Minimalist Python library for image conversion",
+    version="0.1.5",
+    description="Python library for image conversion",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Tin Programmers Team",

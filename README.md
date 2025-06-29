@@ -3,15 +3,15 @@
 **Zinmage** is a minimalist and beginner-friendly Python library and CLI Program for image conversion.  
 It’s designed to be clean, modular, and super easy to use — perfect for devs who just want things to work. ✨
 
-> 💡 Current Feature: Convert `.png` to `.jpg` or vice versa using **one line of code**.
+> 💡 Current Feature: Convert `.png` to `.jpg` to `.webp` or vice versa using **one line of code**.
 
 ---
 
 ## 🚀 Features
 
 - 🎯CLI Version Abvalible
-- ✅ Convert PNG ➜ JPG in seconds
-- 🧩 Modular design — more formats coming soon
+- ✅ Convert images in seconds
+- 🧩 Modular design — more formats
 - 🪶 Lightweight and dependency minimal (just uses Pillow)
 - 💬 Clean and easy API — no boilerplate needed
 
@@ -53,10 +53,11 @@ convert_png_to_jpg("example.png", "converted/my-image.jpg")
 
 ## Methods
 
-| Features  | Methods              |
-| --------- | -------------------- |
-| PNG ➜ JPG | `convert_png_to_jpg` |
-| JPG ➜ PNG | `convert_jpg_to_png` |
+| Features   | Methods               |
+| ---------- | --------------------- |
+| PNG ➜ JPG  | `convert_png_to_jpg`  |
+| JPG ➜ PNG  | `convert_jpg_to_png`  |
+| JPG ➜ Webp | `convert_jpg_to_webp` |
 
 ---
 
@@ -64,44 +65,14 @@ convert_png_to_jpg("example.png", "converted/my-image.jpg")
 
 ## Methods
 
-| Features  | Methods                              |
-| --------- | ------------------------------------ |
-| PNG ➜ JPG | `zinmage convert input.png --to jpg` |
-| JPG ➜ PNG | `zinmage convert photo.jpg --to png` |
+| Features   | Methods                               |
+| ---------- | ------------------------------------- |
+| PNG ➜ JPG  | `zinmage convert input.png --to jpg`  |
+| JPG ➜ PNG  | `zinmage convert photo.jpg --to png`  |
+| JPG ➜ Webp | `zinmage convert photo.jpg --to webp` |
 
 ---
 
-## 🗃️ Project Structure
-
-```
-zinmage/
-├── zinmage/
-│   ├── converters/
-│   │   └── png_to_jpg.py
-│   ├── utils/
-│   │   └── helpers.py
-│   └── __init__.py
-├── tests/
-│   └── test_png_to_jpg.py
-├── README.md
-├── setup.py
-├── pyproject.toml
-├── LICENSE
-
-```
-
----
-
-## 🧪 Running Tests
-
-```bash
-pytest tests/
-
-```
-
-(Uses built-in dummy image for testing.)
-
----
 
 ## 📌 Coming Soon
 

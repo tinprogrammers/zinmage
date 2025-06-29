@@ -12,7 +12,7 @@ from zinmage.utils.helpers import (
 from zinmage import (
     convert_png_to_jpg,
     convert_jpg_to_png,
-    # convert_jpg_to_webp,
+    convert_jpg_to_webp,
     # convert_webp_to_png,
 )
 
@@ -20,28 +20,35 @@ from zinmage import (
 conversion_map = {
     ("png", "jpg"): convert_png_to_jpg,
     ("jpg", "png"): convert_jpg_to_png,
-    # ("jpg", "webp"): convert_jpg_to_webp,
+    ("jpg", "webp"): convert_jpg_to_webp,
     # ("webp", "png"): convert_webp_to_png,
 }
 
 
 def show_welcome():
-    print("\n🖼️  Welcome to \033[1;36mZinmage v0.1.4\033[0m")
-    print("📦 A minimalist image conversion tool for developers & creators.")
-    print("-" * 60)
-    print("\n✨ Features:")
-    print("  🔄 Convert PNG ⇄ JPG")
-    print("  🧪 JPG ⇨ WEBP (coming soon)")
-    print("  🚀 CLI & Python library support")
-    print("  🧠 Smart format detection")
-    print("  💻 Fully open-source")
+    print(r"""                                                                          
+          .--.   _..._    __  __   ___                          __.....__      
+          |__| .'     '. |  |/  `.'   `.            .--./)  .-''         '.    
+          .--..   .-.   .|   .-.  .-.   '          /.''\\  /     .-''"'-.  `.  
+          |  ||  '   '  ||  |  |  |  |  |    __   | |  | |/     /________\   \ 
+.--------.|  ||  |   |  ||  |  |  |  |  | .:--.'.  \`-' / |                  | 
+|____    ||  ||  |   |  ||  |  |  |  |  |/ |   \ | /("'`  \    .-------------' 
+    /   / |  ||  |   |  ||  |  |  |  |  |`" __ | | \ '---. \    '-.____...---. 
+  .'   /  |__||  |   |  ||__|  |__|  |__| .'.''| |  /'""'.\ `.             .'  
+ /    /___    |  |   |  |                / /   | |_||     ||  `''-...... -'    
+|         |   |  |   |  |                \ \._,\ '/\'. __//                    
+|_________|   '--'   '--'                 `--'  `"  `'---'                     
+              \033[1;36mZinMage v0.1.4 - Image Conversion CLI\033[0m
+    """)
 
-    print("\n📌 Usage Examples:")
+    print("📌 \033[1mUsage Examples:\033[0m")
     print("  ▶ zinmage convert input.png --to jpg")
     print("  ▶ zinmage convert photo.jpg --to png")
+    print("  ▶ zinmage convert banner.jpg --to webp")
 
-    print("\n🔧 For help: zinmage --help")
-    print("🌐 Docs: https://github.com/tinprogrammers/zinmage\n")
+    print("\n🔧 \033[1mFor help:\033[0m zinmage --help")
+    print("🌐 \033[1mDocs:\033[0m https://github.com/tinprogrammers/zinmage\n")
+
 
 
 def main():
